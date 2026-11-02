@@ -13,7 +13,7 @@ const projects = [
       "A fashion e-commerce website featuring categorized product browsing, interactive product cards, shopping cart management, user authentication interfaces, and payment/order summaries. Built with HTML, CSS, and JavaScript to create an engaging online shopping experience.",
     technologies: ["HTML", "CSS", "JavaScript"],
     visual: "marketplace",
-    href: "https://cloud-fashion.vercel.app/index.html",
+    href: "https://cloudwear-project.vercel.app/index.html",
     target: "_blank",
   },
   {
