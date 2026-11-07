@@ -3,6 +3,7 @@ import Koorii from "../assets/img/p-img/꾸리 꾸리.jpg";
 import banner from "../assets/img/p-img/Untitled.png";
 import marketplaceScreenshot from "../assets/img/p-img/Screenshot 2026-10-17 233636.png";
 import melodystorebanner from "../assets/img/p-img/Melody.png";
+import PDFConvert from "../assets/img/p-img/PDFConverter.png";
 
 const projects = [
   {
@@ -43,6 +44,18 @@ const projects = [
     technologies: ["Figma", "UI Design", "Typography", "Adopbe Photoshop"],
     visual: "poster",
   },
+
+  {
+    number: "04",
+    category: "AI-Powered Document Processing",
+    title: "PDFConverter",
+    description:
+      "Built an enterprise-grade platform that eliminates manual data entry by instantly extracting text from images/PDFs. Features secure authentication, cloud storage, and a live Admin analytics dashboard for total user management.h",
+    technologies: ["HTML5 / CSS3", "JavaScript(ES6+)", "React.js", "Vite", "Tailwind CSS", "Node.js", "Express.js", "i18next", "Axios", "Tesseract.js", "MongoDB", "PostgreSQL", "Prisma ORM"],
+    visual: "AI",
+    href: "https://pdfconverter-frontend.vercel.app/",
+    target: "_blank",
+  }
 ];
 
 const skillGroups = [
@@ -404,6 +417,18 @@ function ProjectPreview({ type }) {
         <img
           src={banner}
           alt="Flux Fashion editorial poster"
+          className="h-full w-full rounded-2xl object-contain"
+        />
+      </div>
+    );
+  }
+
+  if (type === "AI") {
+    return (
+      <div className="flex h-full w-full items-center justify-center overflow-hidden rounded-2xl bg-[#e5e3bd]">
+        <img
+          src={PDFConvert}
+          alt="PDFConverter project banner"
           className="h-full w-full rounded-2xl object-contain"
         />
       </div>
